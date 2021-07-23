@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model AwwObject
+
+@foreach(var post in Model.data.children)
+{
+<a href="@post.data.url"><h1>@post.data.title</h1></a>
+<img src="@post.data.thumbnail" style="width:50%"; height:auto" alt="reddit post from r/aww" />
+}
+
+
